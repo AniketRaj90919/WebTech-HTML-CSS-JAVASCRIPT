@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #f3f3f3;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Container{
+    width: 490px;
+    height: 560px;
+    background: white;
+    padding: 50px;
+    /* box-shadow: 0 5px 20px rgba(0,0,0,2); */
+    border-radius: 15px;
+    border-top: 6px solid #3fcfb0;
+    position: relative;
+    top: 25px;
+    
+
+}
+.welcome{
+    text-align: center;
+     margin-bottom : 5px;
+     font-size:30px;
+     font-weight: bold;
+     position: relative;
+     /* top: -5px; */
+
+}
+.text{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 10;
+
+}
+label{
+    display: flex;
+    margin-top: 29px;
+    margin-bottom: 6px;
+    font-weight: bold
+}
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #4cbda4;
+    border-radius: 12px;
+    font-size: 13px;
+    background-color: rgb(241, 239, 239);
+
+    
+}
+input[ type="checkbox"]{
+    width: auto;
+    padding: 0;
+    margin-right: 2px;
+}
+.password-note{
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.options{
+    display: flex;
+    font-size: 12px ;
+    justify-content: space-between;
+    align-items: center;
+     margin: 35px 0; 
+    
+
+}
+.options label{
+    margin: 0;
+    margin-bottom: 0;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #3fcfb0;
+    color: white;
+    font-size: 18px;
+    
+
+}
+.signin{
+    margin-top: 8px;
+     font-size: 13px;
+}
+.forgot,
+.create{
+    text-decoration: none;
+    color: #3fcfb0;
+    font-size: 13px;
+    
+
+}
