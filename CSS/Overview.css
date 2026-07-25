@@ -8,6 +8,7 @@
 body{
     background: #f4f6fb;
     color: black;
+    overflow: hidden;
 }
 
 .Container{
@@ -26,13 +27,13 @@ body{
     padding:0 20px;
     display: flex;
     align-items: center;
-    height: 100hv;
+    /* height: 100hv; */
 }
 .header h3{
     font-size: 15px;
     padding-left: 10px;
 }
-.sidebar{
+.Sidebar{
     width: 240px;
     height: 670px; 
     background: white;
@@ -107,12 +108,12 @@ body{
 
 }
 .main-content{
-    margin-left:240px;
+    margin-left:270px;
     margin-right: 20px;
-    margin-top: 60px;
+    margin-top: 50px;
     padding: 30px;
     width: 1000px;
-    height: 700px;
+    /* height: 700px; */
     /* height: 100hv; */
     
 }
@@ -143,8 +144,8 @@ body{
     border-radius: 20px;
     padding: 30px;
     box-shadow:0 0 10px rgb(0,0,0,.08);
-    height: 540px;
-    height: 100hv;
+     min-height: 540px;
+    /* height: 100vh; */
 }
 
 .Welcome{
