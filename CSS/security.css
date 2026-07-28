@@ -1,0 +1,248 @@
+body{
+    background:#f3f7fb;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow:hidden;
+}
+.dashboard{
+    display:flex;
+    width:100%;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:200px;
+    background:#fff;
+    border-right:2px solid #d7eeee;
+    display:flex;
+    flex-direction:column;
+    flex-shrink:0;
+}
+
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding: 12px;
+    border-bottom:2px solid #d7eeee;
+}
+
+.avatar{
+    width:36px;
+    height:36px;
+    background:#173a8f;
+    color:#fff;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.user-info h3{
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.user-info p{
+    font-size:12px;
+    margin-top:2px;
+    color:#666;
+}
+
+
+.sidebar h4{
+    margin:12px 15px 6px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.menu{
+    list-style:none;
+    padding:0 15px;
+}
+
+.menu li{
+    padding:7px 12px;
+    margin-bottom:2px;
+    border-radius:14px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:14px;
+}
+
+.menu li:hover{
+    background:#f5f8f8;
+}
+
+.menu li.active{
+    background:#f8fefe;
+    border:1px solid #9de5e5;
+    border-left:4px solid #43d6d2;
+    border-radius:10px;
+    font-weight:500;
+}
+
+.account{
+    margin-top:auto;
+    margin-bottom:25px;
+}
+
+.main{
+    flex:1;
+}
+
+.topbar{
+    height:55px;
+    display:flex;
+    align-items:center;
+    background:#173A8F;
+    color:#fff;
+    padding:0 24px;
+}
+
+.topbar h2{
+    font-size:15px;
+    
+}
+
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:18px 25px;
+}
+.security-card{
+    width:1050px;
+    background:#fff; 
+    border:2px solid #b8eeee;
+    border-top:4px solid #48d6d3;
+    border-radius:22px;
+    padding:18px 25px;
+    margin-top:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.security-card h2{
+    font-size:25px;
+    margin-top:0;
+    margin-bottom:10px;
+}
+.security-card h3{
+    font-size:18px;
+    margin-top:10px;
+    margin-bottom:8px;
+}
+.security-card p{
+    font-size:14px;
+    color:black;
+    margin-bottom:10px;
+}
+.row{
+    display:flex;
+    gap:20px;
+    flex-direction:18px;
+}
+.input-box{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+.input-box label{
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:6px;
+}
+.input-box input{
+    height:38px;
+    border:none;
+    outline:none;
+    background:#f2f2f2;
+    border-radius:8px;
+    padding:0 15px;
+    font-size:14px;
+}
+.full{
+    width:100%;
+}
+.buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin:15px 0;
+}
+.clear{
+    width:90px;
+    height:46px;
+    border:2px solid #5fd6d6;
+    background:#fff;
+    color:black;
+    border-radius:14px;
+    font-weight:600;
+    cursor:pointer;
+}
+.update{
+    width:180px;
+    height:40px;
+    background:#49d4d4;
+    color:#fff;
+    border:none;
+    border-radius:14px;
+    font-weight:600;
+    cursor:pointer;
+    font-size:16px;
+}
+.update:hover{
+    background:#35c6c6;
+}
+.clear:hover{
+    background:#f2ffff;
+}
+hr{
+    border:none;
+    border-top:1px solid #35c6c6;
+    margin:18px 0;
+}
+.info-row{
+    display:flex;
+    gap:20px;
+}
+.info-card{
+    flex:1;
+    border:2px solid #b8eeee;
+    border-radius:12px;
+    padding:15px;
+    background:#fafefe;
+}
+.info-card h4{
+    font-size:18px;
+    margin-bottom:6px;
+}
+.info-card p{
+    font-size:14px;
+    color:black;
+}
+.icon{
+    font-size:20px;
+    color:#5fd6d6;
+    margin-bottom:12px;
+    display:block;
+}
+@media(max-width:900px){
+    .dashboard{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+    }
+    .row,
+    .info-row{
+        flex-direction:column;
+    }
+    .security-card{
+        width:100%;
+    }
+    .buttons{
+        justify-content:center;
+    }
+}

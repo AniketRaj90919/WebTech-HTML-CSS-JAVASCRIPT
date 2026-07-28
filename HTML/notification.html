@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="../css/notification.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="profile">
+                <div class="avatar">DU</div>
+                <div class="user-info">
+                    <h3>Demo User</h3>
+                    <p>demo@webtech.practice</p>
+                </div>
+            </div>
+            <h4>DASHBOARD</h4>
+            <ul class="menu">
+                <li>Overview</li>
+                <li>Profile Settings</li>
+                <li>Security</li>
+                <li class="active">Notification</li>
+            </ul>
+            <h4>QUICK ACTION</h4>
+            <ul class="menu">
+                <li>Help & Support</li>
+            </ul>
+            <div class="account">
+                <h4>ACCOUNT</h4>
+                <ul class="menu">
+                    <li>Sign Out</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <h2>WebTech Practice Dashboard</h2>
+            </div>
+            <div class="content">
+                <div class="notification-card">
+                    <h2>Notifications</h2>
+                    <h3>
+                        <i class="fa-solid fa-bell"></i>
+                        Notification preferences
+                    </h3>
+                    <p>
+                        Manage how and when you receive notification about your account activity.
+                    </p>
+                    <div class="notify-row">
+                        <div class="notify-box">
+                            <i class="fa-regular fa-envelope icon"></i>
+                            <h4>Email Notifications</h4>
+                            <p>Receive important updates via email</p>
+                            <label>
+                                <input type="checkbox" checked> 
+                                Enable email notifications
+                            </label>
+                        </div>
+                        <div class="notify-box">
+                            <i class="fa-solid fa-lock icon"></i>
+                            <h4>Security Alerts</h4>
+                            <p>Get notified about security changes</p>
+                            <label>
+                                <input type="checkbox" checked>
+                                Enable security alerts
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        Recent Activity
+                    </h3>
+                    <div class="activity-box">
+                        <i class="fa-regular fa-square-check icon"></i>
+                        <h4>Profile Updated</h4>
+                        <p>Your profile information was successfully updated</p>
+                        <small>Today</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

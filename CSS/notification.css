@@ -1,0 +1,257 @@
+body{
+    background:#f3f7fb;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow:hidden;
+}
+.dashboard{
+    display:flex;
+    width:100%;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:200px;
+    background:#fff;
+    border-right:2px solid #d7eeee;
+    display:flex;
+    flex-direction:column;
+    flex-shrink:0;
+}
+
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding: 12px;
+    border-bottom:2px solid #d7eeee;
+}
+
+.avatar{
+    width:36px;
+    height:36px;
+    background:#173a8f;
+    color:#fff;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.user-info h3{
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.user-info p{
+    font-size:12px;
+    margin-top:2px;
+    color:#666;
+}
+
+
+.sidebar h4{
+    margin:12px 15px 6px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.menu{
+    list-style:none;
+    padding:0 15px;
+}
+
+.menu li{
+    padding:7px 12px;
+    margin-bottom:2px;
+    border-radius:14px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:14px;
+}
+
+.menu li:hover{
+    background:#f5f8f8;
+}
+
+.menu li.active{
+    background:#f8fefe;
+    border:1px solid #9de5e5;
+    border-left:4px solid #43d6d2;
+    border-radius:10px;
+    font-weight:500;
+}
+
+.account{
+    margin-top:auto;
+    margin-bottom:25px;
+}
+
+.main{
+    flex:1;
+}
+
+.topbar{
+    height:55px;
+    display:flex;
+    align-items:center;
+    background:#173A8F;
+    color:#fff;
+    padding:0 24px;
+}
+
+.topbar h2{
+    font-size:15px;
+}
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:20px 30px;
+}
+
+.notification-card{
+    width:1000px;
+    background:#fff;
+    border:2px solid #bdeeee;
+    border-top:4px solid #4fd6d6;
+    border-radius:22px;
+    padding:45px;
+    margin-top:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.notification-card h2{
+    margin-top:0;
+    margin-bottom:12px;
+    font-size:28px;
+    font-weight:700;
+}
+
+.notification-card h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:15px;
+    margin:10px 0;
+}
+.notification-card h3 i{
+    color:#48d6d3;
+}
+.notification-card p{
+    color:#555;
+    font-size:13px;
+    line-height:1.4;
+    margin:5px 0;
+}
+.notify-row{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+
+.notify-box{
+    flex:1;
+    background:#fafefe;
+    border:2px solid #bdeeee;
+    border-radius:16px;
+    padding:15px;
+}
+
+.notify-box h4{
+    margin:10px 0;
+    font-size:17px;
+}
+
+.notify-box p{
+    margin-bottom:12px;
+    font-size:15px;
+}
+
+.notify-box label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:15px;
+}
+
+.icon{
+    color:#48d6d3;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+hr{
+    margin:20px 0;
+    border:none;
+    border-top:2px solid #c9efef;
+}
+
+.activity-box{
+    border:2px solid #bdeeee;
+    border-radius:12px;
+    background:#fafefe;
+    padding:15px;
+}
+
+.activity-box h4{
+    margin:10px 0;
+    font-size:17px;
+}
+
+.activity-box p{
+    margin:0;
+    font-size:15px;
+}
+
+.activity-box small{
+    display:block;
+    margin-top:8px;
+    color:#666;
+    font-size:14px;
+}
+.notify-box input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #bdeeee;
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.notify-box input[type="checkbox"]:checked::after{
+    content: "✓";
+    color:black;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+}
+@media(max-width:900px){
+
+.dashboard{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.notify-row{
+    flex-direction:column;
+}
+
+.notification-card{
+    width:100%;
+}
+
+}
