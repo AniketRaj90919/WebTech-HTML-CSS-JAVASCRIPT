@@ -12,11 +12,11 @@ body{
      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 400px;
     background: white;
-    border-top: 2px solid #64cfcf;
+    border-top: 4px solid #64cfcf;
     padding: 35px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(66, 251, 248, 0.1);
-    
+    height: 500px;
 }
 
 .welcome{
@@ -26,10 +26,13 @@ h1{
     text-align: center;
     padding: 0;
 margin: 0;
+margin-bottom: 10px;
 
 }.welcome p{
     text-align: center;
-margin-top: -2px;
+/* margin-top: -2px; */
+margin-bottom: 50px;
+
     
     
     
@@ -38,7 +41,7 @@ margin-top: -2px;
 label{
     display: block;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom:5px;
     margin-left: 5px;
     font-weight: bold;
     
@@ -53,24 +56,39 @@ input[type="password"]{
     border-radius: 10px;
     background: whitesmoke;
     margin-bottom: 10px;
+
+
 }
 
 
 
 P{
     margin-top: 5px;
+    margin-bottom: 10px;
+    
 }
 .checkbox{
     display: flex;
  justify-content: space-between;
     font-size: 12px;
   gap: 8px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  position: relative;
+  
   
 }
+.checkbox span{
+    position: relative;
+    top: -2px;
+}
+
 .checkbox a{
     text-decoration: none;
     color:#64cfcf;
+
 }
+
 button{
     background: #64cfcf;
     color: white;
@@ -88,4 +106,19 @@ button{
 .new a{
     text-decoration: none;
     color:#64cfcf;
+}
+#error{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#passerror{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#checkError{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }

@@ -3,49 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/Signup.css">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="../CSS/Signup.css">
 </head>
 <body>
-    <div id="main">
-        <div class="head">
-            <h1>Create your account</h1>
-            <p> sign up to access the practice Dashboard.</p>
-        </div>
-        <div class="a1">
-            <div class="box">
-            <label>First name:</label>
-            <input type="text"placeholder="Enter first name"></div>
-            <div class="box">
-            <label>Last name:</label>
-            <input type="text"placeholder="Enter last name"></div>
-        </div>
-        <div class="email">
-            <label class="email">Email Address:</label>
-            <input type="email"placeholder="Enter your email address">
-        </div>
-        <div class="a1">
-            <div class="box">
-                <label>Password:</label>
-                <input type="password"placeholder="Enter password"></div>
-                <div class="box">
-                    <label>Comfirm password:</label>
-                    <input type="password"placeholder="Enter password">
+    <div class="Container">
+        <h1 class="heading">Create your account</h1>
+        <p class="text">Sign up to access the practice deshboard</p>
+        <form id="signupForm">
+        <div class="row">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" id="firstName"  placeholder="Enter first name" required>
+                <small id="firstNameError"></small>
+                
                 </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter last name " required >
+                   <small id="lastNameError"></small> 
             </div>
-            <p> Use at least 8 characters,
-                    with <br> letter & number
-                <p>
-                    <div class="agree">
+         </div>
+            <div class="form-group">
             
-             <input type="checkbox">
-             <span>I agree to the Terms</span>
-             </div>
-            <button>Create account</button>
-            <div class="foot">
-                <p>Already have account?</p>
-                <a>Sign in</a>
-            </div>     
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <small id="emailError"></small>
+            
+            </div>
+        <div class="row">
+            <div class="form-group">
+
+                 <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <small id="passwordError"></small>
+                <p id="passwordHint">Use at least 6 characters, with latter and number</p>
+            </div>
+    
+            <div class="form-group">
+                <label>Confirm password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                <small id="confirmPasswordError"></small>
+                 
+            </div>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="remember" required>
+            I agree to the terms.
+        </div>
+        <small id="checkError"></small>
+        <button type="submit" class="submit" id="signup"> Create Account</button>
+        
+
+
+
+        <p class="Signin">
+            Already have account?
+            <a id="signin1" >Signin</a>
+        </p>
+        </form>
     </div>
+    
+    <script src="../JAVASCRIPT/Signup.js"></script>
+
 </body>
 </html>

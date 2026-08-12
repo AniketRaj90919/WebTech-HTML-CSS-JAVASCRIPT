@@ -7,90 +7,77 @@
     <link rel="stylesheet" href="../css/Security.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+
    
 <body>
 
-<div class="container">
 
-    <div class="sidebar">
+ <div class="Container">
+<header class="header">
+ <h3>WebTech Pactice Dashboard</h3>
+    </header>
+    <aside class="Sidebar">
+        <div class="user-info">
+            
 
-        <div class="profile">
-
-            <div class="circle">
-                DU
-            </div>
-
-            <div class="user">
-                <h3>Demo User</h3>
-                <p>demo@webtech.practice</p>
-            </div>
-
+            <h3 id="logo">DU</h3>
+         <div>
+            <p id="username"> Demo user</p>
+            <p id="useremail">demo@webteach.practice</p>
+         </div>
         </div>
-
-        <p class="title">DASHBOARD</p>
-
+        <div class="menu">
+        <h4>Dashboard</h4>
         <ul>
-
-            <li>Overview</li>
-
-            <li>Profile Settings</li>
-
+            <li class="overview">Overview</li>
+            <li class="profile1">Profile Setting</li>
             <li class="active">Security</li>
-
-            <li>Notifications</li>
-
+            <li class="notification">Notification</li>
         </ul>
-
-        <p class="title">QUICK ACTION</p>
-
+        </div>
+        <div class="menu">
+        <h4>Quick Action</h4>
         <ul>
-
-            <li>Help & Support</li>
-
+            <li class="help">Help & Support</li>
         </ul>
-
-        <div class="account">
-
-            <p class="title">ACCOUNT</p>
-
-            <p>Sign Out</p>
-
         </div>
-
-    </div>
-
-    <div class="main">
-
-        <div class="header">
-
-            <h2>WebTech Practice Dashboard</h2>
-
-        </div>
+            <div class="account-menu">
+            <h4>ACCOUNT</h4>
+            <ul>
+                <li class="abc">Sign out</li>
+            </ul>
+             </div>
+    </aside>
         <div class="content">
+            <form id="securityForm">
           <h2>Security Settings</h2>
           <h4>Security Settings</h4>
-          <p>Keep your account secure by using strong password and changing it regularly</p>
+          <p class="keep">Keep your account secure by using strong password and changing it regularly</p>
           <div class="row">
             <div class="box">
             <label>Current passsword</label>
-            <input type="password"placeholder="Enter current password">
+            <input type="password" id="currentPassword" placeholder="Enter current password" required>
+
             </div>
             <div class="box">
                 <label>New password</label>
-                <input type="password"placeholder="Minium 6 characteters">
+                <input type="password" id="newPassword" placeholder="Minimum 6 characters" required>
+                <p id="newPasswordError"></p>
             </div>
           </div>
           <div class="box">
              <label>Confirm new password</label>
-             <input type="password"placeholder="Re-enter new password">
+             <input type="password" id="confirmPassword" placeholder="Re-enter new password" required>
           </div>
           <div class="buttons">
-            <button type="reset" class="clear">Clear</button>
-            <button type="submit"class="update">update password</button>
-          </div>
+            <!-- <p id="passwordMessage"></p> -->
+            <button type="reset" id="clearBtn" class="clear">Clear</button>
+            <button type="submit" id="updateBtn" class="update">update password</button>
+         </div>
+         <P id="passwordMessage"></P>
+          </form>
           <div class="line"></div>
-          <h4>Security information</h4>
+          <h4 class="sec">Security information</h4>
           <div class="card">
             <div class="box3">
                  <i class="fa-solid fa-calendar"></i>
@@ -111,6 +98,8 @@
         
         </div>
     </div>
-        </div>
+
+        <!-- </div> -->
+         <script src="../JAVASCRIPT/Security.js"></script>
 </body>
 </html>

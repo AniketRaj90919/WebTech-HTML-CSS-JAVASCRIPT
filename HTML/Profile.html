@@ -8,63 +8,43 @@
     <link rel="stylesheet" href="../css/profile.css"></head>
 
 <body>
+        <div class="Container">
+       <header class="header">
+        <h3>WebTech Pactice Dashboard</h3>
+    </header>
+    <aside class="Sidebar">
+        <div class="user-info">
+            
 
-<div class="container">
-
-    <div class="sidebar">
-
-        <div class="profile">
-
-            <div class="circle">
-                DU
-            </div>
-
-            <div class="user">
-                <h3>Demo User</h3>
-                <p>demo@webtech.practice</p>
-            </div>
-
+            <h3 id="logo">DU</h3>
+         <div>
+            <p id="username"> Demo user</p>
+            <p id="useremail">demo@webteach.practice</p>
+         </div>
         </div>
-
-        <p class="title">DASHBOARD</p>
-
+        <div class="menu">
+        <h4>Dashboard</h4>
         <ul>
-
-            <li>Overview</li>
-
-            <li class="active">Profile Settings</li>
-
-            <li>Security</li>
-
-            <li>Notifications</li>
-
+            <li class="overview">Overview</li>
+            <li class="active">Profile Setting</li>
+            <li class="security">Security</li>
+            <li class="notification">Notification</li>
         </ul>
-
-        <p class="title">QUICK ACTION</p>
-
+        </div>
+        <div class="menu">
+        <h4>Quick Action</h4>
         <ul>
-
-            <li>Help & Support</li>
-
+            <li class="help">Help & Support</li>
         </ul>
-
-        <div class="account">
-
-            <p class="title">ACCOUNT</p>
-
-            <p>Sign Out</p>
-
         </div>
+            <div class="account-menu">
+            <h4>ACCOUNT</h4>
+            <ul>
+                <li class="abc">Sign out</li>
+            </ul>
+             </div>
+    </aside>
 
-    </div>
-
-    <div class="main">
-
-        <div class="header">
-
-            <h2>WebTech Practice Dashboard</h2>
-
-        </div>
 
         <div class="card">
 
@@ -72,7 +52,7 @@
 
             <h3>Personal Information</h3>
 
-            <form>
+            <form id="profileForm">
 
                 <div class="row">
 
@@ -80,7 +60,7 @@
 
                         <label>Full Name</label>
 
-                        <input type="text" placeholder="Demo User">
+                        <input type="text" id="fullName" placeholder="Demo User">
 
                     </div>
 
@@ -88,7 +68,7 @@
 
                         <label>Date of Birth</label>
 
-                        <input type="date">
+                        <input type="date" id="dob" required >
 
                     </div>
 
@@ -100,7 +80,7 @@
 
                         <label>Email Address</label>
 
-                        <input type="email" placeholder="demo@webtech.practice">
+                        <input type="email" id="profileEmail" placeholder="demo@webtech.practice">
 
                     </div>
 
@@ -108,7 +88,8 @@
 
                         <label>Phone Number</label>
 
-                        <input type="text" placeholder="+91 9876543210">
+                        <input type="tel" id="phone" placeholder="+91 9876543210"
+                         required>
 
                     </div>
 
@@ -120,7 +101,7 @@
 
                     <label>Street Address</label>
 
-                    <textarea placeholder="Enter Street Address"></textarea>
+                    <textarea id="streetAddress" placeholder="Enter Street Address" required></textarea>
 
                 </div>
 
@@ -130,7 +111,7 @@
 
                         <label>PIN Code</label>
 
-                        <input type="text">
+                        <input type="text" id="pin" placeholder="123456" required>
 
                     </div>
 
@@ -138,7 +119,8 @@
 
                         <label>City</label>
 
-                        <input type="text">
+                        <input type="text" id="city" placeholder="Ranchi"
+                         required >
 
                     </div>
 
@@ -150,7 +132,8 @@
 
                         <label>Country</label>
 
-                        <input type="text">
+                        <input type="text" id="country" placeholder="India" required >
+                
 
                     </div>
 
@@ -158,21 +141,24 @@
 
                         <label>GitHub Profile</label>
 
-                        <input type="text">
+                        <input type="text" id="github" placeholder="https://github.com/username" 
+                         >
 
                     </div>
 
                 </div>
 
                 <div class="buttons">
-
+      <span id="profileError"></span>
                     <button type="reset" class="cancel">
                         Cancel Changes
                     </button>
-
+          
                     <button type="submit" class="save">
                         Save Changes
                     </button>
+
+              
 
                 </div>
 
@@ -183,7 +169,7 @@
     </div>
 
 </div>
-
+<script src="../JAVASCRIPT/Profile.js"></script>
 </body>
 
 </html>

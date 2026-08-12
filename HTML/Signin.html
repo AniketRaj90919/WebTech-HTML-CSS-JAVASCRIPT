@@ -13,26 +13,34 @@
             <P>Sign in to continue to your Dashboard</P>
         </div>
         <div>
+            <form>
     <label> Email Address:</label>
-    <input type="email" placeholder="Enter your email address">
+    <input type="email" id="email" placeholder="Enter your email address" required>
+    <p id="error"></p>
     </div>
      <div>
-    <label> Email Address:</label>
-    <input type="password" placeholder="Enter your email password">
+    <label> Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" required>
+    <p id="passerror"></p>
     </div>
     <p>password must be at least 6 characters long.</p>
     <div class="checkbox">
         <div>
-        <input type="checkbox">
-        <span>Remember me for 30 days</span></div>
+        <input type="checkbox" id="remember">
+        <span >Remember me for 30 days</span>
+        <!-- <p id="checkError"></p> -->
+    </div>
         <div>
         <a href="#">forgot password ?</a></div>
     </div>
-    <button>Sign in</button>
+    <button type="submit" id="signin">Sign in</button>
     <div class="new">
     <p>New to WebTech practice?
-    <a href="#">Create an account</a> </p>
+    <a class="signup">Create an account</a> </p>
 </div>
+</form>
+<script src="../JAVASCRIPT/Signin.js"></script>
+
     </div>
     </body>
 </html>

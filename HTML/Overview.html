@@ -3,94 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/Overview.css">
+    <title>Overview page</title>
+    <link rel="stylesheet" href="../CSS/Overview.css">
 </head>
 <body>
-  <div class="main">
- <div class="head">
-    <div class="logo">
-    <div class="demo">DU</div>
-       <div class="user"> <h3>Demo user</h3>
-        <p>demo@webTech.practice</p></div>
-           <div class="line2"></div>
-        
-    </div>
-    
-    <h5 id="dash">DASHBOARD</h5>
-    <ul>
-        <li class="over">Overview</li>
-        <li>profile setting</li>
-        <li>Security</li>
-        <li>Notification</li>
-    </Ul>
-    <h5 id="middle">QUICK ACTION</h5>
-    <ul>
-        <li>Help & Support</li>
-    </ul>
-    <div class="account">
-    <h5>ACCOUNT</h5>
-    <ul>
-        <li>Sign out</li>
-    </ul>
-</div>
-        </div>
-    <div class="main2">
-        <div class="nav">
-            WebTech Practice Dashboard
-        </div>
-    
-    <div class="content">
-        <h2>Welcome back, demo user</h2>
-        <p>manage your profile settings and account perferences.
-            your data is securely stored in your browser's localstorage
-        </p>
-        <div class="cards">
-            <div class="card">
-                <h4>Theme</h4>
-                <p>Dark/Light mode presisted<br>
-                arcoss all pages</p>
-                <div class="line"></div>
-            </div>
-            <div class="card">
-                <h4>Authentication</h4>
-                <p>Secure session stored in <br>
-                browser storage</p>
-                 <div class="line"></div>
-            </div>
-            <div class="card">
-                <h4>Profile</h4>
-                <p>20% profile completed (1/5<br>
-                fields)</p>
-                 <div class="line"></div>
-            </div>
-            <div class="card">
-                <h4>Security</h4>
-                <p>Password protection and <br>
-                account Security</p>
-                 <div class="line"></div>
-            </div>
-            </div>
-            <div>
-                <h3>Quick Actions</h3>
-                <div class="action">
-                    <div class="quick">
-                        <h4>Edit Profile</h4>
-                        <p>Update your personal information</p>
-                    </div>
-                    <div class="quick">
-                        <h4>Change Password</h4>
-                        <p>Update your account security</p>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-     </div>
+    <div class="Container">
+       <header class="header">
+        <h3>WebTech Pactice Dashboard</h3>
+    </header>
+    <aside class="Sidebar">
+        <div class="user-info">
+            
 
+            <h3 id="logo">DU</h3>
+         <div>
+            <p id="username"> Demo user</p>
+            <p id="useremail">demo@webteach.practice</p>
+         </div>
+        </div>
+        <div class="menu">
+        <h4>Dashboard</h4>
+        <ul>
+            <li class="active">Overview</li>
+            <li class="profile">Profile Setting</li>
+            <li class="security">Security</li>
+            <li class="notification">Notification</li>
+        </ul>
+        </div>
+        <div class="menu">
+        <h4>Quick Action</h4>
+        <ul>
+            <li class="help">Help & Support</li>
+        </ul>
+        </div>
+            <div class="account-menu">
+            <h4>ACCOUNT</h4>
+            <ul>
+                <li class="abc">Sign out</li>
+            </ul>
+             </div>
     
-     
-    
-  
+    </aside>
+    <main class="main-content">
+        <div class="dashboard-box">
+            <section class="Welcome">
+            <h2>Welcome Back ,Demo User</h2>
+            <p>
+               Manage your profile setting and account preference.
+               Your data is securely stored in your browser's localStorage.
+            </p>
+        </section>
+        <section class="info-card">
+            <div class="card">
+                <h3>Theme</h3>
+                <p>dark/light mode persisted across all pages</p>
+            <div class="progress">
+                <div class="progress-fill"></div>
+            </div>
+
+            </div>
+            <div class="card">
+                <h3>Authentication</h3>
+                <p>Secure session storedin browser storage</p>
+                <div class="progress">
+                <div class="progress-fill"></div>
+            </div>
+
+            </div>
+        
+            <div class="card">
+                <h3>Profile</h3>
+                <p>25%  profile completed(1/5)fields</p>
+                <div class="progress">
+                <div class="progress-fill"></div>
+            </div>
+            </div>
+            <div class="card">
+                <h3>Security</h3>
+                <p>password protection and account security</p>      
+                 <div class="progress">
+                <div class="progress-fill"></div>
+            </div>
+            </div>
+        </section>
+        <section class="quick-action">
+            <h2>Quick Actions</h2>
+           <div class="action-box">
+            <div class="action-card">
+                <h3>Edit Profile</h3>
+                <p>Update your personal information</p>
+            </div>
+            <div class="action-card">
+                <h3>Change-Password</h3>
+                <p>Update your account security</p>
+            </div>
+
+           </div>
+        </div>
+        </section>
+        </main>
+        <script src="../JAVASCRIPT/Overview.js"></script>
+        </div>
+
 </body>
 </html>
