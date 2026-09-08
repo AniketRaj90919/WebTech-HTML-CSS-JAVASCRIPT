@@ -1,39 +1,4 @@
 
-
-let email = localStorage.getItem("userEmail");
-let password = localStorage.getItem("password");
-
-let firstName = localStorage.getItem("firstName");
-let lastName = localStorage.getItem("lastName");
-
-if (email) {
-
-    document.getElementById("useremail").innerHTML = email;
-
-    let fullName = firstName + " " + lastName;
-    document.getElementById("username").innerHTML = fullName;
-
-    let initials =
-        firstName.charAt(0).toUpperCase() +
-        lastName.charAt(0).toUpperCase();
-
-    document.getElementById("logo").innerHTML = initials;
-}
-document.getElementsByClassName("notification")[0].addEventListener("click", function () {
-    location.href = "Notification.html";
-});
-document.getElementsByClassName("profile1")[0].addEventListener("click", function () {
-    location.href = "Profile.html";
-});
-document.getElementsByClassName("help")[0].addEventListener("click", function () {
-    location.href = "Help&Support.html";
-});
-document.getElementsByClassName("overview")[0].addEventListener("click", function () {
-    location.href = "Overview.html";
-});
-document.getElementsByClassName("abc")[0].addEventListener("click", function () {
-    location.href = "Landing.html";
-});
 const currentPassword = document.getElementById("currentPassword");
 const newPassword = document.getElementById("newPassword");
 const confirmPassword = document.getElementById("confirmPassword");

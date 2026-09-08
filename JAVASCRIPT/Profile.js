@@ -1,47 +1,4 @@
 
-let email = localStorage.getItem("userEmail");
-let firstName = localStorage.getItem("firstName");
-let lastName = localStorage.getItem("lastName");
-
-if (email) {
-
-    let fullName = firstName + " " + lastName;
-
-    document.getElementById("username").innerHTML = fullName;
-    document.getElementById("useremail").innerHTML = email;
-
-    let initials =
-        firstName.charAt(0).toUpperCase() +
-        lastName.charAt(0).toUpperCase();
-
-    document.getElementById("logo").innerHTML = initials;
-
-    document.getElementById("fullName").value = fullName;
-    document.getElementById("profileEmail").value = email;
-}
-
-
-// Navigation
-
-document.getElementsByClassName("security")[0].addEventListener("click", function () {
-    location.href = "Security.html";
-});
-
-document.getElementsByClassName("notification")[0].addEventListener("click", function () {
-    location.href = "Notification.html";
-});
-
-document.getElementsByClassName("help")[0].addEventListener("click", function () {
-    location.href = "Help&Support.html";
-});
-
-document.getElementsByClassName("overview")[0].addEventListener("click", function () {
-    location.href = "Overview.html";
-});
-
-document.getElementsByClassName("abc")[0].addEventListener("click", function () {
-    location.href = "Landing.html";
-});
 
 
 // Profile Form
@@ -62,7 +19,7 @@ profileForm.addEventListener("submit", function (e) {
 
     e.preventDefault();
 
-    // Error message clear
+    
     profileError.innerHTML = "";
     profileError.style.color = "red";
 
@@ -102,8 +59,6 @@ profileForm.addEventListener("submit", function (e) {
         return;
     }
 
-
-    // Agar sab correct hai to localStorage me save hoga
 
     localStorage.setItem(
         "fullName",
@@ -154,12 +109,12 @@ profileForm.addEventListener("submit", function (e) {
     // Green message
 
     profileError.innerHTML = "Profile Updated Successfully";
-    profileError.style.color = " rgb(7, 137, 7)";
-    profileError.style.display = "inline";
+    profileError.style.color = " rgb(12, 150, 12)";
+    profileError.style.display = "block";
 });
     const cancelBtn= document.querySelector(".cancel");
     cancelBtn.addEventListener("click", function () {
         profileError.innerHTML = "cancel successfully";
-        profileError.style.color = "rgb(7, 137, 7)";
-        profileError.style.display = "block";
+        profileError.style.color = "rgb(12, 150, 12)";
+        profileError.style.display = "inline";
     });
