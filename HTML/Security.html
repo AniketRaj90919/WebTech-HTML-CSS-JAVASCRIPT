@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Security.css">
+</head>
+<body>
+    <div class="Container">
+        <header class="Security-header">
+            <h3>WebTeach Practice Dashboard</h3>
+        </header>
+        <aside class="sidebar">
+            <div class="user-info">
+                <h3 id="initials">DU</h3>
+            <div>
+            <p id="username">Demo User</p>
+            <p id="useremail">demo@webteach.practice</p>
+            </div>
+            </div>
+                 <div class="menu">
+                    <h4>Dashboard</h4>
+                    <ul>
+                        <li id="overview">Overview</li>
+                        <li id="profile">Profile Settings</li>
+                        <li id="security"> Security</li>
+                        <li id="notification">Notification</li>
+                    </ul>
+                 </div>
+                 <div class="menu">
+                    <h4>Quick Action</h4>
+                    <ul>
+                        <li id="help">Help & Security</li>
+                    </ul>
+                 </div>
+                 <div class="account-menu">
+                    <h4>ACCOUNT</h4>
+                    <ul>
+                        <li class="Signout">Sign Out</li>
+                    </ul>
+                 </div>
+        </aside>
+        <main class="main-content">
+            <div class="dashboard-box">
+                <section class="Security">
+                    <h4>Security Setting</h4>
+
+                    <p>Security Setting</p>
+                    <p>Keep your account secure by using a strong password and cahnging it regularly.</p>
+
+                </section>
+                <form id="securityForm">
+                <section class="info-card">
+                    <div class="card">
+                        <div class="input-box">
+                            <label>Current password</label>
+                            <input type="password" id="currentPassword"  placeholder="Enter current password" required>
+                        </div>
+                        <div class="input-box">
+                            <label>New password</label>
+                            <input type="password" id="newPassword" placeholder="minimum 6 charates" required>
+                        </div>
+                        <div class="input-box full-width">
+                            <label>Confirm new password</label>
+                            <input type="password" id="confirmPassword" placeholder="Re-enter new password" required>
+
+                        </div>
+                
+                        <div class="button-box">
+                             <div id="passwordMessage" class="success-box"></div>
+
+                            <button type="button" class="clear-btn ">Clear</button>
+                            <button type="submit" class="update-btn"> Update password</button>
+                          
+                        </div>
+                        
+                    
+                        <div class="security-section">
+                            <h2>Security Information</h2>
+                        <div class="security-info">
+
+                           <div class="security-card">
+
+                                   <i class="fa-regular fa-calendar"></i>
+
+                                <h4>Account Created</h4>
+                                    <p>8/31/2025</p>
+                            </div>
+
+                             <div class="security-card">
+                                   <i class="fa-regular fa-calendar"></i>
+
+                                <h4>Last Updated</h4>
+                                <p>Never updated</p>
+                             </div>
+
+                             <div class="security-card">
+                                 <i class="fa-regular fa-calendar"></i>
+
+                                <h4>Session</h4>
+                              <p>Current browser session active</p>
+                             </div>
+
+                            </div>
+                       </div>
+
+                    </div>
+                </form>
+                </section>
+
+            </div>
+
+        </main>
+
+
+    </div>
+    <script src="../JAVASCRIPT/Security.js"></script>
+     <script src="../JAVASCRIPT/Common.js"></script>
+</body>
+</html>

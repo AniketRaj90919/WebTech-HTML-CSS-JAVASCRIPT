@@ -18,7 +18,7 @@ body{
     padding: 50px;
     /* box-shadow: 0 5px 20px rgba(0,0,0,2); */
     border-radius: 15px;
-    border-top: 6px solid #3fcfb0;
+    border-top: 6px solid #57e2db;
     position: relative;
     top: 25px;
     
@@ -51,7 +51,7 @@ input[type="email"],
 input[type="password"]{
     width: 100%;
     padding: 14px;
-    border: 1px solid #4cbda4;
+    border: 1px solid #57e2db;
     border-radius: 12px;
     font-size: 13px;
     background-color: rgb(241, 239, 239);
@@ -86,7 +86,7 @@ button{
     padding: 15px;
     border: none;
     border-radius: 12px;
-    background: #3fcfb0;
+    background: #57e2db;
     color: white;
     font-size: 18px;
     
@@ -99,7 +99,7 @@ button{
 .forgot,
 .create{
     text-decoration: none;
-    color: #3fcfb0;
+    color: #57e2db;
     font-size: 13px;
     
 

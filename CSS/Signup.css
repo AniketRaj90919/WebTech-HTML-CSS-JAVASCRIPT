@@ -55,6 +55,12 @@ label{
     margin-bottom:6px;
     color: #222;
 }
+.terms{
+    font-weight: normal;
+}
+/* .error-text {
+    color: red !important;
+} */
 
 input[type="text"],
 input[type="email"],
@@ -95,8 +101,9 @@ p{
     border:none;
     border-radius:8px;
     color:white;
-    font-weight:bold;
+    /* font-weight:bold; */
     font-size: 15px;
+    cursor: pointer;
 }
 
 .Signup{
@@ -107,4 +114,11 @@ p{
     color:#5ad6d2;
     text-decoration:none;
     font-weight: bold;
+
+}
+small{
+    color:red;
+    display:block;
+    font-size:13px;
+    margin-top:5px;
 }

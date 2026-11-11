@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification page</title>
+    <link rel="stylesheet" href="../CSS/Notification.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="Container">
+        <header class="Notification-header">
+            <h3>WebTeach Practice Dashboard </h3>
+
+        </header>
+        <aside class="sidebar">
+            <div class="user-info">
+                <h3 id="initials">DU</h3>
+            <div>
+            <p id="username">Demo User</p>
+            <p id="useremail">demo@webteach.practice</p>
+            </div>
+            </div>
+                 <div class="menu">
+                    <h4>Dashboard</h4>
+                    <ul>
+                        <li id="overview">Overview</li>
+                        <li id="profile">Profile Settings</li>
+                        <li id="security"> Security</li>
+                        <li id="notification">Notification</li>
+                    </ul>
+                 </div>
+                 <div class="menu">
+                    <h4>Quick Action</h4>
+                    <ul>
+                        <li id="help">Help & Support</li>
+                    </ul>
+                 </div>
+                 <div class="account-menu">
+                    <h4>ACCOUNT</h4>
+                    <ul>
+                        <li class="Signout">Sign out</li>
+                    </ul>
+                 </div>
+
+            </div>
+
+        </aside>
+        <main class="main-content">
+            <div class="dashboard-box">
+                <section class="Notification">
+                    <h4>Notifications</h4>
+                    <div class="header">
+                     <i class="fa-solid fa-bell"></i>
+                     <p >Notification Preferences</p>
+                 </div>
+                     <p>Manage how and when you receive notifications about your account activity.</p>
+                
+                    <div class="notification-info">
+
+                     <div class="notification-card">
+                         <i class="fa-regular fa-envelope"></i>
+                         <h4>Email Notifications</h4>
+                         <p>Receive important updates via email</p>
+
+                    <div class="checkbox-box">
+                     <input type="checkbox" id="email">
+                     <label for="email">Enable email notifications</label>
+                    </div>
+                  </div>
+
+                   <div class="notification-card">
+                   <i class="fa-solid fa-lock"></i>
+                   <h4>Security Alerts</h4>
+                   <p>Get notified about security changes</p>
+
+                   <div class="checkbox-box">
+                   <input type="checkbox" id="security">
+                   <label for="security">Enable security alerts</label>
+                 </div>
+                 </div>
+
+            </div>
+
+             <div class="recent-section">
+              <h4>Recent Activity</h4>
+
+             <div class="activity-card">
+              <i class="fa-regular fa-square-check"></i>
+              <h4>Profile Updated</h4>
+              <p>Your profile information was successfully updated.</p>
+              <span>Today</span>
+           </div>
+           </div>
+
+          </section>
+
+            </div>
+
+        </main>
+               
+
+
+
+    </div>
+    <script src="../JAVASCRIPT/Notification.js"></script>
+     <script src="../JAVASCRIPT/Common.js"></script>
+</body>
+</html>

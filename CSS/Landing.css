@@ -102,7 +102,7 @@ body{
     height:320px;
     margin:0;
     background:#fff;
-    border-top:2px solid #29468f;
+    border-top:5px solid #29468f;
     border-radius:20px;
     box-shadow:0 4px 15px rgba(0,0,0,.2);
     text-align: center;
@@ -159,6 +159,7 @@ body{
 }
 
 .slider-box p{
+    
     font-size:15px;
     color:#080707;
     line-height:22px;
@@ -256,7 +257,7 @@ body{
     border: 2px solid #c0d1d1;
     border-radius: 8px;
 }
-.footer-link button.signup{
+.footer-link button.footer-signup{
     background-color: #48d9d6;
 
 }

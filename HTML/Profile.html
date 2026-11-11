@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../CSS/Profile.css">
+</head>
+<body>
+    <div class="Container">
+        <header class="profile-header">
+            <h3>WebTeach Practice Dashboard</h3>
+        </header>
+        <aside class="sidebar">
+            <div class="user-info">
+                <h3 id="initials">DU</h3>
+            <div>
+            <p id="username">Demo user</p>
+            <p id="useremail">demo@webteach.practice</p>
+            </div>
+          </div>
+           <div class="menu">
+        <h4>Dashboard</h4>
+        <ul>
+            <li id="overview">Overview</li>
+            <li id="profile">Profile Setting</li>
+            <li id="security">Security</li>
+            <li id="notification">Notification</li>
+        </ul>
+        </div>
+        <div class="menu">
+        <h4>Quick Action</h4>
+        <ul>
+            <li id="help">Help & Support</li>
+        </ul>
+        </div>
+            <div class="account-menu">
+            <h4>ACCOUNT</h4>
+            <ul>
+                <li class="Signout">Sign out</li>
+            </ul>
+             </div>
+        </aside>
+        <main class="main-content">
+            <div class="dashboard-box">
+                <div class="personal-scroll">
+                 
+                <section class="profile">
+                    <h4>Profile Setting </h4>
+                    
+                    <p>personal information</p>
+
+                </section>
+                <section class="info-card">
+                   <form>
+                    <div class="card">
+                        <div class="row">
+                            <div class="input-box">
+                                <!-- <div class="profile-content"> -->
+                                <label>Full Name</label>
+                                <input type="text" id="fullName" placeholder="Demo User">
+
+                                 </div>
+
+                                 <div class="input-box">
+                                    <label>Date of Birth</label>
+                                    <input type="date"  placeholder="dd-mm-yy" required>
+                                 </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-box">
+                                <label>Email Address</label>
+                                <input type="email" id="email" placeholder="demo@gamil.com" required>
+                            </div>
+                            <div class="input-box">
+                                <label>Phone Number</label>
+                                <input type="number" placeholder="919876543210" required>
+                            </div>
+
+
+                        </div>
+                        <h4>Address Information</h4>
+
+                        <div class="input-box full-width">
+                            <label>Street Address</label>
+                            <textarea placeholder="Enter your complete address" required></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="input-box">
+                                <label>PIN Code</label>
+                                <input type="text" placeholder="123456" required>
+                            </div>
+                            <div class="input-box">
+                                <label>City</label>
+                                <input type="text" placeholder="Ranchi" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-box">
+                                <label>Country</label>
+                                <input type="text" placeholder="India" required>
+                            </div>
+                            <div class="input-box">
+                                <label>GitHub Profile</label>
+                                <input type="text" placeholder="https:/github.com/username" required>
+                            </div>
+                        </div>
+                         
+                     <div class="button-area">
+
+                         <div class="button-box">
+
+                           <div id="successMessage"></div>
+
+                         <button type="button" class="cencel-btn">Cencel Changes</button>
+                         <button type="submit" class="save-btn">Save Changes</button>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+                 <!-- </div> -->
+                </div>
+            </form>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
+     <script src="../JAVASCRIPT/Common.js"></script>
+     <script src="../JAVASCRIPT/Profile.js"></script>
+</body>
+</html>

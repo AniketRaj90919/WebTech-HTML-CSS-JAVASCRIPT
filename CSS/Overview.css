@@ -30,8 +30,8 @@ body{
     /* height: 100hv; */
 }
 .header h3{
-    font-size: 15px;
-    padding-left: 10px;
+    font-size: 20px;
+    padding-left: 15px;
 }
 .Sidebar{
     width: 240px;
@@ -80,7 +80,7 @@ body{
 }
 .active{
     border: 1px solid #57e2db;
-    border-radius: 30px;
+    border-radius: px;
     text-align: center;
     padding: 10px;
     border-left: 3px solid #57e2db;
@@ -100,10 +100,11 @@ body{
 .menu li{
     padding: 12px 18px;
     margin-bottom: 8px;
-    border-radius: 8px;
+    border-radius: 25px;
     font-size: 14px;
     color: black;
     text-align: left;
+    cursor: pointer;
 
 
 }
@@ -123,6 +124,7 @@ body{
     position: absolute;
     bottom: 60px;
     left: 25px;
+    cursor: pointer;
 }
 .account-menu h4{
     text-transform: uppercase;
@@ -136,6 +138,9 @@ body{
     padding-left: 15px;
     margin: 0;
 
+}
+.SignOut{
+    cursor: pointer;
 }
 .deshboard-box{
     background: white;

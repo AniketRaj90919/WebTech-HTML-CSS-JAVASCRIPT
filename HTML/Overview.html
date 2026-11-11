@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deshboard</title>
+    <title>Overview page</title>
     <link rel="stylesheet" href="../CSS/Overview.css">
 </head>
 <body>
@@ -15,31 +15,32 @@
         <div class="user-info">
             
 
-            <h3>DU</h3>
+            <h3 id="initials">DU</h3>
          <div>
-            <p> Demo user</p>
-            <p>demo@webteach.practice</p>
+            <p id="username"> Demo user</p>
+            <p id="useremail">demo@webteach.practice</p>
          </div>
         </div>
         <div class="menu">
         <h4>Dashboard</h4>
         <ul>
-            <li class="active">Overview</li>
-            <li>Profile Setting</li>
-            <li>Security</li>
-            <li>Notification</li>
+            <li id="overview">Overview</li>
+            <li id="profile">Profile Setting</li>
+            <li id="security">Security</li>
+            <li id="notification">Notification</li>
+            
         </ul>
         </div>
         <div class="menu">
         <h4>Quick Action</h4>
         <ul>
-            <li>Help & Support</li>
+            <li id="help">Help & Support</li>
         </ul>
         </div>
             <div class="account-menu">
             <h4>ACCOUNT</h4>
             <ul>
-                <li>Sign out</li>
+                <li class="Signout">Sign out</li>
             </ul>
              </div>
     
@@ -103,6 +104,7 @@
         </section>
         </main>
         </div>
-
+     <script src="../JAVASCRIPT/Overview.js"></script>
+      <script src="../JAVASCRIPT/Common.js"></script>
 </body>
 </html>
